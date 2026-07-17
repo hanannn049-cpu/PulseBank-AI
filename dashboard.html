@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | PulseBank AI</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>PulseBank AI</h2>
+  <p>AI Decision Advisor</p>
+
+  <a class="nav active" href="dashboard.html">Dashboard</a>
+  <a class="nav" href="problems.html">Problems</a>
+  <a class="nav" href="analysis.html">AI Analysis</a>
+  <a class="nav" href="assistant.html">AI Assistant</a>
+  <a class="nav" href="reports.html">Reports</a>
+  <a class="nav ghost" href="index.html">Back Home</a>
+</aside>
+
+<main class="main">
+  <div class="top">
+    <div>
+      <h1>Operations Dashboard</h1>
+      <p class="subtitle">Real-time banking service intelligence</p>
+    </div>
+    <a class="btn" href="problems.html">View Problems</a>
+  </div>
+
+  <div class="alert">
+    <div>
+      <strong>🚨 Critical Alert</strong>
+      <p>OTP complaints increased by 48% today.</p>
+    </div>
+    <a class="btn" href="problems.html">View Problems</a>
+  </div>
+
+  <section class="cards">
+    <div class="card"><span>Total Complaints</span><h2>248</h2><p class="red">+48% today</p></div>
+    <div class="card"><span>System Health</span><h2>72%</h2><p class="orange">Needs attention</p></div>
+    <div class="card"><span>Customer Satisfaction</span><h2>81%</h2><p class="green">Stable</p></div>
+    <div class="card"><span>Active Issues</span><h2>5</h2><p class="red">2 High priority</p></div>
+  </section>
+
+  <section class="grid">
+    <div class="panel">
+      <h3>Top Service Issues</h3>
+      <div class="bar redbar"><span style="width:85%"></span><p>OTP Service 85%</p></div>
+      <div class="bar orangebar"><span style="width:55%"></span><p>Transfers 55%</p></div>
+      <div class="bar yellowbar"><span style="width:35%"></span><p>Login 35%</p></div>
+      <div class="bar greenbar"><span style="width:25%"></span><p>Cards 25%</p></div>
+    </div>
+
+    <div class="panel">
+      <h3>AI Insight Preview</h3>
+      <p class="insight">
+        PulseBank AI detected unusual activity in OTP service complaints.
+        The likely contributing factor is high latency in the SMS gateway.
+      </p>
+      <a class="btn" href="analysis.html?id=otp">Analyze OTP Issue</a>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

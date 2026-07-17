@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Problems | PulseBank AI</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>PulseBank AI</h2>
+  <p>AI Decision Advisor</p>
+
+  <a class="nav" href="dashboard.html">Dashboard</a>
+  <a class="nav active" href="problems.html">Problems</a>
+  <a class="nav" href="analysis.html">AI Analysis</a>
+  <a class="nav" href="assistant.html">AI Assistant</a>
+  <a class="nav" href="reports.html">Reports</a>
+  <a class="nav ghost" href="index.html">Back Home</a>
+</aside>
+
+<main class="main">
+  <div class="top">
+    <div>
+      <h1>Detected Problems</h1>
+      <p class="subtitle">Operational issues detected across banking services.</p>
+    </div>
+  </div>
+
+  <div class="problem-list">
+
+    <div class="problem-card high">
+      <div>
+        <span class="status-pill danger-pill">High Priority</span>
+        <h3>OTP Service Delay</h3>
+        <p>OTP complaints increased by 48% and affected transfer verification.</p>
+      </div>
+      <div class="problem-meta">
+        <b>248</b>
+        <span>complaints</span>
+        <a class="btn" href="analysis.html?id=otp">Analyze with AI</a>
+      </div>
+    </div>
+
+    <div class="problem-card medium">
+      <div>
+        <span class="status-pill warning-pill">Medium Priority</span>
+        <h3>Transfer Success Rate Dropped</h3>
+        <p>Successful transfers decreased by 18% compared to yesterday.</p>
+      </div>
+      <div class="problem-meta">
+        <b>116</b>
+        <span>cases</span>
+        <a class="btn" href="analysis.html?id=transfer">Analyze with AI</a>
+      </div>
+    </div>
+
+    <div class="problem-card medium">
+      <div>
+        <span class="status-pill warning-pill">Medium Priority</span>
+        <h3>Login Timeout Increase</h3>
+        <p>More users experienced timeout while logging into the banking app.</p>
+      </div>
+      <div class="problem-meta">
+        <b>74</b>
+        <span>cases</span>
+        <a class="btn" href="analysis.html?id=login">Analyze with AI</a>
+      </div>
+    </div>
+
+    <div class="problem-card low">
+      <div>
+        <span class="status-pill success-pill">Low Priority</span>
+        <h3>Card Transaction Slowdown</h3>
+        <p>Card transaction response time increased during peak hours.</p>
+      </div>
+      <div class="problem-meta">
+        <b>39</b>
+        <span>cases</span>
+        <a class="btn" href="analysis.html?id=cards">Analyze with AI</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+</body>
+</html>

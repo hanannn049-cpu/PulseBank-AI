@@ -1,0 +1,74 @@
+{
+  "otp": {
+    "id": "otp",
+    "title": "OTP Service Delay",
+    "summary": "OTP complaints increased by 48% within one day, affecting transfer verification.",
+    "rootCause": "SMS Gateway Latency",
+    "confidence": "96%",
+    "priority": "High",
+    "service": "OTP / Transfers",
+    "badge": "High Priority",
+    "complaints": 248,
+    "actions": [
+      "Switch OTP messages to backup SMS provider.",
+      "Test OTP gateway response time.",
+      "Notify affected customers.",
+      "Monitor complaints for 24 hours."
+    ],
+    "impact": ["Complaints -35%", "Success Rate +18%", "Response Time Faster"]
+  },
+  "transfer": {
+    "id": "transfer",
+    "title": "Transfer Success Rate Dropped",
+    "summary": "Successful transfers decreased by 18% compared to the previous day.",
+    "rootCause": "Verification Failure",
+    "confidence": "89%",
+    "priority": "Medium",
+    "service": "Money Transfers",
+    "badge": "Medium Priority",
+    "complaints": 116,
+    "actions": [
+      "Review transfer verification logs.",
+      "Check OTP dependency with transfer confirmation.",
+      "Run test transactions across channels.",
+      "Escalate to operations team if failure continues."
+    ],
+    "impact": ["Complaints -22%", "Success Rate +12%", "Response Time Improved"]
+  },
+  "login": {
+    "id": "login",
+    "title": "Login Timeout Increase",
+    "summary": "Login timeout cases increased during peak usage hours.",
+    "rootCause": "Authentication Server Load",
+    "confidence": "84%",
+    "priority": "Medium",
+    "service": "Mobile Banking Login",
+    "badge": "Medium Priority",
+    "complaints": 74,
+    "actions": [
+      "Scale authentication server resources.",
+      "Review login traffic during peak hours.",
+      "Optimize session handling.",
+      "Monitor timeout rate after changes."
+    ],
+    "impact": ["Complaints -18%", "Success Rate +9%", "Response Time Better"]
+  },
+  "cards": {
+    "id": "cards",
+    "title": "Card Transaction Slowdown",
+    "summary": "Card transaction response time increased during peak hours.",
+    "rootCause": "Peak-Time Processing Delay",
+    "confidence": "78%",
+    "priority": "Low",
+    "service": "Card Payments",
+    "badge": "Low Priority",
+    "complaints": 39,
+    "actions": [
+      "Monitor card processing time.",
+      "Check payment gateway performance.",
+      "Review peak-hour capacity.",
+      "Prioritize high-value transaction routing."
+    ],
+    "impact": ["Complaints -10%", "Success Rate +6%", "Response Time Stable"]
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Assistant | PulseBank AI</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>PulseBank AI</h2>
+  <p>AI Decision Advisor</p>
+
+  <a class="nav" href="dashboard.html">Dashboard</a>
+  <a class="nav" href="problems.html">Problems</a>
+  <a class="nav" href="analysis.html?id=otp">AI Analysis</a>
+  <a class="nav active" href="assistant.html">AI Assistant</a>
+  <a class="nav" href="reports.html">Reports</a>
+  <a class="nav ghost" href="index.html">Back Home</a>
+</aside>
+
+<main class="main">
+  <div class="top">
+    <div>
+      <h1>AI Assistant</h1>
+      <p class="subtitle">Ask questions and get decision support instantly.</p>
+    </div>
+    <a class="btn" href="reports.html">Generate Report</a>
+  </div>
+
+  <div class="chat-box" id="chatBox">
+    <div class="message ai">Hello, I can help you analyze the OTP issue and suggest the best decision.</div>
+  </div>
+
+  <div class="quick">
+    <button onclick="quickAsk('Why did complaints increase?')">Why did complaints increase?</button>
+    <button onclick="quickAsk('What is the best decision now?')">Best decision?</button>
+    <button onclick="quickAsk('What if we delay fixing it?')">If we delay?</button>
+  </div>
+
+  <div class="chat-input">
+    <input id="userQuestion" placeholder="Ask a question..." />
+    <button onclick="askAI()">Ask</button>
+  </div>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

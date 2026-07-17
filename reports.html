@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reports | PulseBank AI</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>PulseBank AI</h2>
+  <p>AI Decision Advisor</p>
+
+  <a class="nav" href="dashboard.html">Dashboard</a>
+  <a class="nav" href="problems.html">Problems</a>
+  <a class="nav" href="analysis.html?id=otp">AI Analysis</a>
+  <a class="nav" href="assistant.html">AI Assistant</a>
+  <a class="nav active" href="reports.html">Reports</a>
+  <a class="nav ghost" href="index.html">Back Home</a>
+</aside>
+
+<main class="main">
+  <div class="top">
+    <div>
+      <h1>AI Decision Reports</h1>
+      <p class="subtitle">Multiple AI-generated reports help management track issues and decisions.</p>
+    </div>
+    <button onclick="window.print()">Export Reports</button>
+  </div>
+
+  <div class="report-summary">
+    <div class="summary-card red-card"><span>High Priority Reports</span><h2>2</h2></div>
+    <div class="summary-card orange-card"><span>Pending Decisions</span><h2>3</h2></div>
+    <div class="summary-card green-card"><span>Resolved Issues</span><h2>7</h2></div>
+  </div>
+
+  <div class="reports-grid">
+    <div class="report-card high-report">
+      <div class="report-head"><span class="status-pill danger-pill">High</span><small>Today 10:24 AM</small></div>
+      <h3>OTP Service Incident</h3>
+      <p><b>Root Cause:</b> SMS Gateway Latency</p>
+      <p><b>Decision:</b> Switch to backup provider</p>
+      <p><b>Expected Impact:</b> Complaints -35%</p>
+      <button>View Details</button>
+    </div>
+
+    <div class="report-card medium-report">
+      <div class="report-head"><span class="status-pill warning-pill">Medium</span><small>Today 09:15 AM</small></div>
+      <h3>Transfer Success Rate Drop</h3>
+      <p><b>Root Cause:</b> Verification failure</p>
+      <p><b>Decision:</b> Review transfer logs</p>
+      <p><b>Expected Impact:</b> Success rate +12%</p>
+      <button>View Details</button>
+    </div>
+
+    <div class="report-card medium-report">
+      <div class="report-head"><span class="status-pill warning-pill">Medium</span><small>Yesterday</small></div>
+      <h3>Login Timeout Increase</h3>
+      <p><b>Root Cause:</b> Authentication server load</p>
+      <p><b>Decision:</b> Scale server resources</p>
+      <p><b>Expected Impact:</b> Timeout -18%</p>
+      <button>View Details</button>
+    </div>
+
+    <div class="report-card low-report">
+      <div class="report-head"><span class="status-pill success-pill">Resolved</span><small>Last Week</small></div>
+      <h3>Card Transaction Slowdown</h3>
+      <p><b>Root Cause:</b> Peak-time processing delay</p>
+      <p><b>Decision:</b> Monitor payment gateway</p>
+      <p><b>Expected Impact:</b> Stable response time</p>
+      <button>View Details</button>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
