@@ -1,6 +1,6 @@
 # PulseBank AI
 
-AI-powered banking decision-support prototype with a Flask backend.
+AI-powered banking decision-support prototype.
 
 ## Run locally
 
